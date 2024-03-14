@@ -7,9 +7,9 @@
         [alt]="cartItem.id"
       />
       <p>{{cartItem.name}}</p>
-      <button (click)="decreaseQuantity()" class="quantity-btn remove-btn center">-</button>
-      <span class="quantity-text center">1</span>
-      <button (click)="increaseQuantity()" class="quantity-btn add-btn center">+</button>
+      <button (click)="decreaseQuantity(cartItem)" class="quantity-btn remove-btn center">-</button>
+      <span class="quantity-text center">{{cartItem.quantity}}</span>
+      <button (click)="increaseQuantity(cartItem)" class="quantity-btn add-btn center">+</button>
     </li>
   </ul>
 </div>
